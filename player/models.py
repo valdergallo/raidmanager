@@ -37,6 +37,7 @@ class Classes(models.Model):
 
 
 class Game(models.Model):
+    image = models.ImageField(upload_to="/game/", null=True, blank=True)
     name = models.CharField(blank=True, max_length=100)
 
     def __str__(self):
@@ -44,6 +45,7 @@ class Game(models.Model):
 
 
 class Faction(models.Model):
+    image = models.ImageField(upload_to="/faction/", null=True, blank=True)
     name = models.CharField(blank=True, max_length=100)
 
     def __str__(self):
