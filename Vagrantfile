@@ -98,6 +98,8 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y libatlas-base-dev
     sudo apt-get install -y gfortran
     sudo apt-get install -y fabric
+    sudo apt-get install -y npm
+    sudo apt-get install -y nodejs-legacy
 
     # install pandas
     # sudo apt-get install -y python-scipy
@@ -146,6 +148,7 @@ Vagrant.configure(2) do |config|
     git config --global core.autocrlf true
     git config --global credential.helper store
     git config --global push.default simple
+    sudo npm install -g bower
 
     # CONFIG VIRTUALENV
     ln -s /vagrant work_home
