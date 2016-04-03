@@ -148,7 +148,11 @@ Vagrant.configure(2) do |config|
     git config --global core.autocrlf true
     git config --global credential.helper store
     git config --global push.default simple
+
+    # NPM javascript
     sudo npm install -g bower
+    sudo npm install -g grunt-cli
+    sudo npm install -g less
 
     # CONFIG VIRTUALENV
     ln -s /vagrant work_home
