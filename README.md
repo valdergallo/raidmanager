@@ -20,6 +20,7 @@ Manager wow players for one raid :D
     vagrant ssh
     workon env
     cd work_home
+    pip install -r requirements.txt
 ```
 
 - start to developer :D
