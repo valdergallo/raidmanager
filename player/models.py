@@ -36,11 +36,35 @@ class Classes(models.Model):
         return self.name
 
 
+class Game(models.Model):
+    name = models.CharField(blank=True, max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Faction(models.Model):
+    name = models.CharField(blank=True, max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Race(models.Model):
+    name = models.CharField(blank=True, max_length=100)
+    game = models.ForeignKey(Game)
+    faction = models.ForeignKey(Faction)
+
+    def __str__(self):
+        return self.name
+
+
 class Player(models.Model):
     image = models.ImageField(upload_to="/player/%Y/%m/%d/", null=True, blank=True)
     name = models.CharField(blank=True, max_length=100)
     ilvl = models.IntegerField(blank=True, null=True)
     lvl = models.IntegerField(blank=True, null=True)
+    race = models.ForeignKey(Race)
     server = models.ForeignKey(Server)
     classe = models.ForeignKey(Classes)
     main_spec = models.ForeignKey(Specs)
