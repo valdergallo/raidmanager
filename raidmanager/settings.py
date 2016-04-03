@@ -44,6 +44,7 @@ APPS = [
     'history',
     'raid',
     'raidmanager',
+    'core',
 ]
 
 
