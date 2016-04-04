@@ -135,7 +135,28 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+
+# Redirect when login is not correct.
+LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = '/login'
+
+# WHOOSH configuration
+# WHOOSH_INDEX = os.path.join(BASE_DIR, 'whoosh')
+#
+# HAYSTACK_CONNECTIONS = {
+#     'default': {
+#         'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+#         'PATH': WHOOSH_INDEX
+#     }
+# }
+
+# Google Analytics Code For Claro GOAL
+# GOOGLE_ANALYTICS_CODE = 'UA-xxxxxxx-x'
 
 # Local settings
 try:
