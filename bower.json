@@ -1,0 +1,18 @@
+{
+  "name": "raidmanager",
+  "homepage": "https://github.com/valdergallo/raidmanager",
+  "description": "raid manager bower collection",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "core/static/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
