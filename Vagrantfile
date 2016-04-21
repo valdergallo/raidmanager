@@ -153,11 +153,13 @@ Vagrant.configure(2) do |config|
     sudo npm install -g bower
     sudo npm install -g grunt-cli
     sudo npm install -g less
+    sudo npm install -g typings
 
     # CONFIG VIRTUALENV
     ln -s /vagrant work_home
     export WORKON_HOME="/home/vagrant/.virtualenvs"
     mkvirtualenv env
+    sudo chown vagrant: -R /home/vagrant/.virtualenvs
     # workon env
     # pip install -r /vagrant/requirements.txt
 
