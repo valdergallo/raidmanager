@@ -1,3 +1,6 @@
+[![Code Issues](https://www.quantifiedcode.com/api/v1/project/b34265ffa389411ea6a523c4e7aba35f/badge.svg)](https://www.quantifiedcode.com/app/project/b34265ffa389411ea6a523c4e7aba35f)
+
+
 # Raid Manager
     Manager WOW players for one raid :D
 
