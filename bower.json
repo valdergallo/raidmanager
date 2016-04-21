@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap-css": "^3.3.6",
     "angular-bootstrap": "^1.2.5",
-    "jquery": "^2.2.2"
+    "jquery": "^2.2.2",
+    "ng2-bootstrap": "^1.0.13"
   }
 }
