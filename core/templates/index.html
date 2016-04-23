@@ -4,23 +4,44 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 <html ng-app>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="World of Warcraft - Raid Leader Manager">
+        <meta name="author" content="valdergallo">
+
         <title>Core Manager</title>
 
         <!-- Bootstrap -->
         <link href="{% static 'bower/bootstrap-css/css/bootstrap.min.css' %}" rel="stylesheet">
+        
+        <title>Raid Leader Manager - {% block title %}{{ title|default:"Index" }}{% endblock %}</title>
     </head>
     <body>
-        <div>
-          <label>Name:</label>
-          <input type="text" ng-model="yourName" placeholder="Enter a name here">
-          <hr>
-          <h1>Hello {% verbatim %}{{yourName}}{% endverbatim %}!</h1>
-        </div>
+    {% include "nav.html" %}
+    
+    <div class="container">
+    {% block content %}
+    
+        Content test
+    
+    {% endblock content %}
+    <hr>
+    
+    
+    <footer>
+        <p>&copy; Raid Leader Manger, 2016</p>
+    </footer>
+    
+    </div><!--/.container-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{% static 'bower/jquery/dist/jquery.js' %}"></script>
