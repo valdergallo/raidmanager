@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="index.html")),
     url(r'^admin/', admin.site.urls),
     url(r'^player/', include("player.urls", namespace="player")),
+    url(r'^raid/', include("raid.urls", namespace="raid")),
+    url(r'^manager/', include("manager.urls", namespace="manager")),
 ]
 
 if settings.DEBUG:
