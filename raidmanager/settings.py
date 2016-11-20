@@ -160,6 +160,7 @@ LOGIN_URL = '/login'
 
 # Local settings
 try:
-    execfile(os.path.join(BASE_DIR, 'raidmanager', 'settings_local.py'))
+    f = open(os.path.join(BASE_DIR, 'raidmanager', 'settings_local.py'))
+    exec(f.read())
 except IOError:
     pass
